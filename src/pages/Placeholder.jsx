@@ -13,4 +13,6 @@ const Placeholder = ({ title }) => {
     );
 };
 
+
+
 export default Placeholder;
