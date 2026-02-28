@@ -28,7 +28,6 @@ const Login = () => {
             }
         }, 800);
     };
-
     return (
         <div className="min-h-screen bg-slate-50 flex flex-col justify-center items-center p-4 relative overflow-hidden">
             {/* Decorative background elements */}
@@ -43,7 +42,6 @@ const Login = () => {
                     <h1 className="text-2xl font-bold text-slate-800 tracking-tight">Welcome back to DashHub</h1>
                     <p className="text-slate-500 text-sm mt-1">Sign in to manage your store</p>
                 </div>
-
                 {error && (
                     <div className="mb-6 p-4 bg-rose-50 text-rose-600 text-sm font-medium rounded-xl border border-rose-100 flex items-center animate-in fade-in slide-in-from-top-2">
                         {error}
@@ -114,5 +112,6 @@ const Login = () => {
         </div>
     );
 };
+
 
 export default Login;
