@@ -12,13 +12,11 @@ import Settings from './pages/Settings';
 import Placeholder from './pages/Placeholder';
 import Login from './pages/Login';
 
-
 const ProtectedRoute = ({ children }) => {
   const { isAuthenticated } = useAuth();
   if (!isAuthenticated) return <Navigate to="/login" replace />;
   return children;
 };
-
 
 function App() {
   return (
