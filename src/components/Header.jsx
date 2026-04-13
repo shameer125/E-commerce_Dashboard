@@ -13,6 +13,7 @@ const Header = () => {
                     className="bg-transparent border-none outline-none ml-3 text-sm w-full text-slate-700 placeholder:text-slate-400"
                 />
             </div>
+
             <div className="flex items-center space-x-6">
                 <NotificationsDropdown />
                 <div className="flex items-center gap-3 cursor-pointer">
@@ -21,6 +22,7 @@ const Header = () => {
                         alt="User avatar"
                         className="w-10 h-10 rounded-full ring-2 ring-slate-100"
                     />
+                    
                     <div className="hidden md:block">
                         <p className="text-sm font-medium text-slate-700">Admin User</p>
                         <p className="text-xs text-slate-500">Store Manager</p>
