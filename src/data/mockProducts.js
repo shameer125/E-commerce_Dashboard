@@ -7,7 +7,6 @@ export const initialProducts = [
         stock: 45,
         image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80&w=800&ixlib=rb-4.0.3',
     },
-
     {
         id: '2',
         name: 'Sony A7IV Camera',
@@ -16,7 +15,6 @@ export const initialProducts = [
         stock: 12,
         image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=800&ixlib=rb-4.0.3',
     },
-    
     {
         id: '3',
         name: 'Herman Miller Aeron',
