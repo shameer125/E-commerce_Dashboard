@@ -18,7 +18,9 @@ const CustomerModal = ({ isOpen, onClose, onSave, initialData }) => {
         }
     }, [initialData, isOpen]);
 
+
     if (!isOpen) return null;
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -29,6 +31,7 @@ const CustomerModal = ({ isOpen, onClose, onSave, initialData }) => {
             joinDate: initialData?.joinDate || new Date().toISOString()
         });
         onClose();
+        
     };
 
     return (
