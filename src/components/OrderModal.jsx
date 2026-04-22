@@ -47,20 +47,25 @@ const OrderModal = ({ isOpen, onClose, onSave, initialData, customers }) => {
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-            <div className="absolute inset-0 bg-slate-900/40 backdrop-blur-sm" onClick={onClose} />
-            <div className="relative bg-white rounded-2xl shadow-xl w-full max-w-md overflow-hidden animate-in fade-in zoom-in-95 duration-200">
-                <div className="px-6 py-4 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
+            <div className="absolute inset-0 bg-slate-900/40 backdrop-blur-sm"
+                onClick={onClose} />
+            <div className="relative bg-white rounded-2xl shadow-xl w-full max-w-md 
+            overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+                <div className="px-6 py-4 border-b border-slate-100 flex items-center 
+                justify-between bg-slate-50/50">
                     <h2 className="text-lg font-bold text-slate-800">
                         {initialData ? 'Edit Order Details' : 'Create New Order'}
                     </h2>
-                    <button onClick={onClose} className="p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-xl transition-colors">
+                    <button onClick={onClose} className="p-2 text-slate-400
+                    hover:text-slate-600 hover:bg-slate-100 rounded-xl transition-colors">
                         <X className="w-5 h-5" />
                     </button>
                 </div>
 
                 <form onSubmit={handleSubmit} className="p-6 space-y-4">
                     <div>
-                        <label className="block text-sm font-semibold text-slate-700 mb-1.5">Select Customer</label>
+                        <label className="block text-sm font-semibold text-slate-700 mb-1.5">
+                            Select Customer</label>
                         <select
                             required
                             value={formData.customerId}
