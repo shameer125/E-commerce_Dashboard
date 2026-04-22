@@ -26,6 +26,7 @@ const NotificationsDropdown = () => {
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, []);
 
+
     const markAllRead = () => {
         setNotifications(notifications.map(n => ({ ...n, read: true })));
     };
@@ -35,6 +36,7 @@ const NotificationsDropdown = () => {
         setNotifications(notifications.filter(n => n.id !== id));
     };
 
+
     const getIcon = (type) => {
         switch (type) {
             case 'order': return <Package className="w-4 h-4 text-brand-600" />;
@@ -43,6 +45,7 @@ const NotificationsDropdown = () => {
             default: return <Bell className="w-4 h-4 text-amber-600" />;
         }
     };
+
 
     const getBgColor = (type) => {
         switch (type) {
@@ -57,16 +60,20 @@ const NotificationsDropdown = () => {
         <div className="relative" ref={dropdownRef}>
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="w-10 h-10 rounded-full bg-slate-100 flexitems-center justify-center text-slate-500 hover:bg-slate-200 hover:text-slate-700 transition-colors relative flex items-center"
+                className="w-10 h-10 rounded-full bg-slate-100 flexitems-center 
+                justify-center text-slate-500 hover:bg-slate-200 hover:text-slate-700
+                 transition-colors relative flex items-center"
             >
                 <Bell className="w-5 h-5 mx-auto" />
                 {unreadCount > 0 && (
-                    <span className="absolute top-0 right-0 w-3 h-3 bg-rose-500 border-2 border-white rounded-full"></span>
+                    <span className="absolute top-0 right-0 w-3 h-3 bg-rose-500 border-2
+                     border-white rounded-full"></span>
                 )}
             </button>
 
             {isOpen && (
-                <div className="absolute right-0 mt-3 w-80 sm:w-96 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden z-50 animate-in fade-in slide-in-from-top-4 duration-200">
+                <div className="absolute right-0 mt-3 w-80 sm:w-96 bg-white rounded-2xl 
+                shadow-xl border border-slate-100 overflow-hidden z-50 animate-in fade-in slide-in-from-top-4 duration-200">
                     <div className="px-4 py-3 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
                         <h3 className="font-bold text-slate-800">Notifications</h3>
                         {unreadCount > 0 && (
