@@ -39,13 +39,17 @@ const Customers = () => {
     };
 
     return (
-        <div className="animate-in fade-in slide-in-from-bottom-4 duration-700 ease-out h-full flex flex-col">
-            <div className="mb-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <div className="animate-in fade-in slide-in-from-bottom-4 duration-700 
+        ease-out h-full flex flex-col">
+            <div className="mb-8 flex flex-col sm:flex-row justify-between items-start
+             sm:items-center gap-4">
                 <div>
-                    <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">Customers Directory</h1>
+                    <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">
+                        Customers Directory</h1>
                     <p className="text-slate-500 mt-2 text-base">Manage your customer base and view their activity.</p>
                 </div>
-                <button onClick={handleAdd} className="flex items-center gap-2 px-5 py-2.5 bg-brand-600 hover:bg-brand-700 text-white rounded-xl font-semibold shadow-md shadow-brand-500/20 active:scale-95 transition-all text-sm w-full sm:w-auto justify-center">
+                <button onClick={handleAdd} className="flex items-center gap-2 px-5 py-2.5
+                 bg-brand-600 hover:bg-brand-700 text-white rounded-xl font-semibold shadow-md shadow-brand-500/20 active:scale-95 transition-all text-sm w-full sm:w-auto justify-center">
                     <Plus className="w-5 h-5" />
                     Add Customer
                 </button>
@@ -130,7 +134,5 @@ const Customers = () => {
         </div>
     );
 };
-
-
 
 export default Customers;
