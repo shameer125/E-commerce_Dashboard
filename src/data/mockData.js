@@ -19,6 +19,7 @@ export const mockCustomers = [
         status: 'Inactive',
         joinDate: '2023-11-24'
     },
+
     {
         id: 'CUST-003',
         name: 'Esther Howard',
@@ -29,6 +30,7 @@ export const mockCustomers = [
         status: 'Active',
         joinDate: '2022-04-05'
     },
+
     {
         id: 'CUST-004',
         name: 'Cameron Williamson',
@@ -39,6 +41,7 @@ export const mockCustomers = [
         status: 'Active',
         joinDate: '2024-01-15'
     },
+
     {
         id: 'CUST-005',
         name: 'Brooklyn Simmons',
@@ -49,6 +52,7 @@ export const mockCustomers = [
         status: 'Active',
         joinDate: '2024-02-28'
     }
+    
 ];
 
 export const mockOrders = [
