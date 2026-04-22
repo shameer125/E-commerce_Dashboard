@@ -21,13 +21,17 @@ const Sidebar = () => {
     ];
 
     return (
-        <aside className="w-64 bg-slate-900 border-r border-slate-800 text-slate-300 flex flex-col h-full shadow-2xl z-20">
-            <div className="h-20 flex items-center px-6 border-b border-slate-800/60 bg-slate-900/50 backdrop-blur-sm">
+        <aside className="w-64 bg-slate-900 border-r border-slate-800 text-slate-300 flex 
+        flex-col h-full shadow-2xl z-20">
+            <div className="h-20 flex items-center px-6 border-b border-slate-800/60
+             bg-slate-900/50 backdrop-blur-sm">
                 <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-brand-400 to-brand-600 rounded-xl flex items-center justify-center shadow-lg shadow-brand-500/20">
+                    <div className="w-10 h-10 bg-gradient-to-br from-brand-400
+                     to-brand-600 rounded-xl flex items-center justify-center shadow-lg shadow-brand-500/20">
                         <Package className="w-5 h-5 text-white" />
                     </div>
-                    <span className="text-2xl font-bold text-white tracking-wide">Dash<span className="text-brand-400">Hub</span></span>
+                    <span className="text-2xl font-bold text-white tracking-wide">
+                        Dash<span className="text-brand-400">Hub</span></span>
                 </div>
             </div>
 
