@@ -4,10 +4,12 @@ const AuthContext = createContext();
 
 export const useAuth = () => useContext(AuthContext);
 
+
 export const AuthProvider = ({ children }) => {
     const [isAuthenticated, setIsAuthenticated] = useState(() => {
         return localStorage.getItem('dashhub_auth') === 'true';
     });
+
 
     useEffect(() => {
         localStorage.setItem('dashhub_auth', isAuthenticated);
@@ -21,6 +23,7 @@ export const AuthProvider = ({ children }) => {
         }
         return false;
     };
+
 
     const logout = () => {
         setIsAuthenticated(false);
