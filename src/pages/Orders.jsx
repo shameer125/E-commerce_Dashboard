@@ -172,11 +172,16 @@ const Orders = () => {
                                             </select>
                                         </td>
                                         <td className="px-6 py-4 text-right">
-                                            <div className="flex items-center justify-end gap-1 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity">
-                                                <button onClick={() => handleEdit(order)} className="p-2 text-slate-400 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-all duration-200" title="Edit Order">
+                                            <div className="flex items-center justify-end gap-1 opacity-100 lg:opacity-0
+                                             lg:group-hover:opacity-100 transition-opacity">
+                                                <button onClick={() => handleEdit(order)} className="p-2 text-slate-400
+                                                hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-all
+                                                duration-200" title="Edit Order">
                                                     <Edit2 className="w-4 h-4" />
                                                 </button>
-                                                <button onClick={() => deleteOrder(order.id)} className="p-2 text-slate-400 hover:text-rose-600 hover:bg-rose-50 rounded-xl transition-all duration-200 ml-1" title="Delete Order">
+                                                <button onClick={() => deleteOrder(order.id)} className="p-2 text-slate-400
+                                                 hover:text-rose-600 hover:bg-rose-50 rounded-xl transition-all duration-200
+                                                  ml-1" title="Delete Order">
                                                     <Trash2 className="w-4 h-4" />
                                                 </button>
                                             </div>
@@ -229,7 +234,5 @@ const Orders = () => {
         </div>
     );
 };
-
-
 
 export default Orders;
