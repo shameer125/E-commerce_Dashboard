@@ -154,11 +154,14 @@ const Settings = () => {
 
                     </div>
 
-                    <div className="absolute bottom-0 left-0 right-0 p-6 bg-slate-50 border-t border-slate-100 flex justify-end">
+                    <div className="absolute bottom-0 left-0 right-0 p-6 bg-slate-50 border-t
+                     border-slate-100 flex justify-end">
                         <button
                             onClick={handleSave}
                             disabled={isSaving}
-                            className={`px-6 py-2.5 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl shadow-md shadow-brand-500/20 active:scale-95 transition-all flex items-center gap-2 ${isSaving ? 'opacity-80' : ''}`}
+                            className={`px-6 py-2.5 bg-brand-600 hover:bg-brand-700 text-white 
+                            font-semibold rounded-xl shadow-md shadow-brand-500/20 active:scale-95
+                             transition-all flex items-center gap-2 ${isSaving ? 'opacity-80' : ''}`}
                         >
                             <Save className="w-4 h-4" />
                             {isSaving ? 'Saving...' : 'Save Changes'}
@@ -170,7 +173,5 @@ const Settings = () => {
         </div>
     );
 };
-
-
 
 export default Settings;
