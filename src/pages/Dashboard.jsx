@@ -48,7 +48,8 @@ const Dashboard = () => {
         <div className="animate-in fade-in slide-in-from-bottom-4 duration-700 ease-out">
             <div className="mb-10 flex justify-between items-end">
                 <div>
-                    <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">Dashboard Overview</h1>
+                    <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">
+                        Dashboard Overview</h1>
                     <p className="text-slate-500 mt-2 text-base">Here's a snapshot of your store's performance today.</p>
                 </div>
                 <button
@@ -152,7 +153,5 @@ const Dashboard = () => {
         </div>
     );
 };
-
-
 
 export default Dashboard;
