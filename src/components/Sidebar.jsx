@@ -21,13 +21,15 @@ const Sidebar = () => {
     ];
 
     return (
-        <aside className="w-64 bg-slate-900 border-r border-slate-800 text-slate-300 flex 
+        <aside className="w-64 bg-slate-900 border-r border-slate-800
+         text-slate-300 flex 
         flex-col h-full shadow-2xl z-20">
             <div className="h-20 flex items-center px-6 border-b border-slate-800/60
              bg-slate-900/50 backdrop-blur-sm">
                 <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-gradient-to-br from-brand-400
-                     to-brand-600 rounded-xl flex items-center justify-center shadow-lg shadow-brand-500/20">
+                     to-brand-600 rounded-xl flex items-center justify-center shadow-lg
+                     shadow-brand-500/20">
                         <Package className="w-5 h-5 text-white" />
                     </div>
                     <span className="text-2xl font-bold text-white tracking-wide">
@@ -60,8 +62,11 @@ const Sidebar = () => {
             </nav>
 
             <div className="p-4 border-t border-slate-800/60">
-                <button onClick={handleLogout} className="flex items-center w-full px-4 py-3 rounded-xl font-medium text-slate-400 hover:bg-rose-500/10 hover:text-rose-400 transition-all duration-300 group">
-                    <LogOut className="w-5 h-5 mr-4 text-slate-500 group-hover:text-rose-400 transition-colors duration-300" />
+                <button onClick={handleLogout} className="flex items-center w-full px-4 py-3 
+                rounded-xl font-medium text-slate-400 hover:bg-rose-500/10 hover:text-rose-400
+                transition-all duration-300 group">
+                    <LogOut className="w-5 h-5 mr-4 text-slate-500 group-hover:text-rose-400 
+                    transition-colors duration-300" />
                     Logout
                 </button>
             </div>
