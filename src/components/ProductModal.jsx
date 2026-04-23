@@ -52,11 +52,17 @@ const ProductModal = ({ isOpen, onClose, onSave, product }) => {
 
                 <form onSubmit={handleSubmit} className="p-6 space-y-5">
                     <div className="flex gap-4">
-                        <div className="w-32 h-32 bg-slate-50 border-2 border-dashed border-slate-200 rounded-2xl flex flex-col items-center justify-center text-slate-400 shrink-0 overflow-hidden group relative">
+                        <div className="w-32 h-32 bg-slate-50 border-2 border-dashed
+                         border-slate-200 rounded-2xl flex flex-col items-center
+                         justify-center text-slate-400 shrink-0 overflow-hidden group
+                         relative">
                             {formData.image ? (
                                 <>
-                                    <img src={formData.image} alt="Preview" className="w-full h-full object-cover" />
-                                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <img src={formData.image} alt="Preview" className="w-full 
+                                    h-full object-cover" />
+                                    <div className="absolute inset-0 bg-black/40 flex 
+                                    items-center justify-center opacity-0 group-hover:opacity-100
+                                     transition-opacity">
                                         <UploadCloud className="w-6 h-6 text-white" />
                                     </div>
                                 </>
