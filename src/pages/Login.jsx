@@ -29,12 +29,16 @@ const Login = () => {
         }, 800);
     };
     return (
-        <div className="min-h-screen bg-slate-50 flex flex-col justify-center items-center p-4 relative overflow-hidden">
+        <div className="min-h-screen bg-slate-50 flex flex-col justify-center items-center 
+        p-4 relative overflow-hidden">
             {/* Decorative background elements */}
-            <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-brand-400/20 rounded-full blur-3xl pointer-events-none"></div>
-            <div className="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-brand-600/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-brand-400/20 
+            rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-brand-600/20
+             rounded-full blur-3xl pointer-events-none"></div>
 
-            <div className="w-full max-w-md bg-white rounded-3xl shadow-xl border border-slate-100 p-8 relative z-10 animate-in fade-in zoom-in-95 duration-500">
+            <div className="w-full max-w-md bg-white rounded-3xl shadow-xl border
+             border-slate-100 p-8 relative z-10 animate-in fade-in zoom-in-95 duration-500">
                 <div className="flex flex-col items-center mb-8">
                     <div className="w-16 h-16 bg-gradient-to-br from-brand-400 to-brand-600 rounded-2xl flex items-center justify-center shadow-lg shadow-brand-500/30 mb-4 transform hover:rotate-12 transition-transform duration-300">
                         <Package className="w-8 h-8 text-white" />
