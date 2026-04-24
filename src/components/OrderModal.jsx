@@ -10,6 +10,7 @@ const OrderModal = ({ isOpen, onClose, onSave, initialData, customers }) => {
         paymentMethod: 'Credit Card'
     });
 
+
     useEffect(() => {
         if (initialData) {
             setFormData({
@@ -33,6 +34,7 @@ const OrderModal = ({ isOpen, onClose, onSave, initialData, customers }) => {
         e.preventDefault();
         const selectedCustomer = customers.find(c => c.id === formData.customerId);
 
+        
         onSave({
             id: initialData?.id || `ORD-${Math.floor(Math.random() * 90000) + 10000}`,
             customer: selectedCustomer,
