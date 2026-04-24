@@ -4,7 +4,6 @@ import Sidebar from './Sidebar';
 import Header from './Header';
 import NotificationsDropdown from './NotificationsDropdown';
 
-
 const Layout = () => {
     return (
         <div className="flex h-screen bg-slate-50 relative overflow-hidden">
