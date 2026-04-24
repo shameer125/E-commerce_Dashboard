@@ -14,6 +14,7 @@ const Header = () => {
                 />
             </div>
 
+            
             <div className="flex items-center space-x-6">
                 <NotificationsDropdown />
                 <div className="flex items-center gap-3 cursor-pointer">
@@ -29,6 +30,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+            
         </header>
     );
 };
