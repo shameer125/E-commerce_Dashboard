@@ -11,12 +11,14 @@ const Orders = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [editingOrder, setEditingOrder] = useState(null);
 
+
     const filteredOrders = orders.filter(o => {
         const matchesSearch = o.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
             o.customer.name.toLowerCase().includes(searchTerm.toLowerCase());
         const matchesStatus = statusFilter === 'All' || o.status === statusFilter;
         return matchesSearch && matchesStatus;
     });
+
 
     const {
         currentPage,
@@ -38,6 +40,7 @@ const Orders = () => {
         }
     };
 
+    
     const handleAdd = () => {
         setEditingOrder(null);
         setIsModalOpen(true);
