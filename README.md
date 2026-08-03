@@ -67,7 +67,7 @@ src/
 Clone the repository
 
 ```bash
-git clone https://github.com/shameercodes/e-commerce-dashboard.git
+git clone https://github.com/shameercodes/E-commerce-Dashboard.git
 ```
 
 Navigate to the project folder
